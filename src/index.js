@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { RememberizeApp } from './RememberizeApp';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RememberizeApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
