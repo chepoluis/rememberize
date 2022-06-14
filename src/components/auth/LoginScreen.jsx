@@ -24,7 +24,7 @@ export const LoginScreen = () => {
                     </div>
 
                     <div className='d-grid gap-2 mt-3 mb-4'>
-                        <button type='submit' className='btn btn-primary'>
+                        <button type='submit' className='submit btn btn-primary'>
                             Submit
                         </button>
                     </div>
