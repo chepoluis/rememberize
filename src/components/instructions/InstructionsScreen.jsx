@@ -9,9 +9,7 @@ import img3 from '../../assets/img/instruction3.png';
 export const InstructionsScreen = () => {
     return (
         <div>
-            <h1>Remenberize</h1>
-
-            <div class="row justify-content-center">
+            <div className="row justify-content-center">
                 <Carousel className='instructions-carousel' variant="dark" >
                     <Carousel.Item interval={7000}>
                         <img
