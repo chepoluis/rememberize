@@ -1,6 +1,8 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 import { gameImages } from '../../helpers/gameImages'
+import { ArrowComponent } from './ArrowComponent'
+
 
 export const WordDefinition = () => {
     return (
@@ -18,11 +20,7 @@ export const WordDefinition = () => {
                     <div className="col-12 text-center">
                         <Card.Img className="image-definition"  variant="bottom" src={gameImages(`./book.jpg`)}  />
                     </div>
-                    <div className='d-flex justify-content-end'>
-                        <button className='arrow-right'>
-                            <i className="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
+                    <ArrowComponent/>
                 </Card.Body>
             </Card>
         </div>

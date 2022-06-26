@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { LoginScreen } from '../auth/LoginScreen';
 import { RegisterScreen } from '../auth/RegisterScreen';
+import { ArrowComponent } from '../game/ArrowComponent';
+import { GameDefinitions } from '../game/GameDefinitions';
 import { WordDefinition } from '../game/WordDefinition';
 import { HomeScreen } from '../home/HomeScreen';
 import { InstructionsScreen } from '../instructions/InstructionsScreen';
@@ -19,7 +21,8 @@ export const AppRouter = () => {
                 <Route path='/register' element={ <RegisterScreen /> } />
                 <Route path='/instructions' element={ <InstructionsScreen /> } />
                 <Route path='/game' element={ <WordDefinition /> } />
-
+                <Route path='/definitions' element={ <GameDefinitions /> } />
+                
             </Routes>
         </BrowserRouter>
     )
