@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { LoginScreen } from '../auth/LoginScreen';
 import { RegisterScreen } from '../auth/RegisterScreen';
-import { ArrowComponent } from '../game/ArrowComponent';
 import { GameDefinitions } from '../game/GameDefinitions';
 import { WordDefinition } from '../game/WordDefinition';
 import { HomeScreen } from '../home/HomeScreen';
