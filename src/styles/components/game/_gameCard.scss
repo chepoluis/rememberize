@@ -45,3 +45,28 @@
     bottom:0px;
     right:15px;
 }
+
+.trophy{
+    width: 200px;
+    height: 200px;
+    margin:10px auto;
+    vertical-align:middle;
+}
+
+.title-winner{
+    color: #8C52FF;
+    font-size: 3em
+}
+
+.button-yes{
+    position:absolute;
+    bottom:90px;
+    left: 200px;
+}
+
+
+.button-no{
+    position:absolute;
+    bottom:90px;
+    right:200px;
+}
