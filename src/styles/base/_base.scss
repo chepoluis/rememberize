@@ -31,3 +31,14 @@
 .pointer {
     cursor: pointer;
 }
+
+.correct-answer {
+    background-color: rgb(114, 229, 114);
+}
+
+.wrong-answer {
+    background-color: rgb(241, 132, 132);    
+}
+.base-color-answer {
+    background-color: #ECE2FF;
+}
