@@ -4,31 +4,91 @@ export const wordsSlice = createSlice({
     name: 'words',
     initialState: {
         words: [
-            {
-                id: 1,
-                definition: 'is simply dummy text of the printing and typesetting industry',
-                answer: false
-            },
-            {
-                id: 2,
-                definition: 'is simply dummy text of the printing and typesetting industry',
-                answer: false
-            },
-            {
-                id: 3,
-                definition: 'is simply dummy text of the printing and typesetting industry',
-                answer: true
-            },
-            {
-                id: 4,
-                definition: 'is simply dummy text of the printing and typesetting industry',
-                answer: false
-            },
-            {
-                id: 5,
-                definition: 'is simply dummy text of the printing and typesetting industry',
-                answer: false
-            }
+            [
+                {
+                    id: 1,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: false
+                },
+                {
+                    id: 2,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: false
+                },
+                {
+                    id: 3,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: true
+                }
+            ],
+            [
+                {
+                    id: 1,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: false
+                },
+                {
+                    id: 2,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: false
+                },
+                {
+                    id: 3,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: true
+                }
+            ],
+            [
+                {
+                    id: 1,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: false
+                },
+                {
+                    id: 2,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: false
+                },
+                {
+                    id: 3,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: true
+                }
+            ],
+            [
+                {
+                    id: 1,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: false
+                },
+                {
+                    id: 2,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: false
+                },
+                {
+                    id: 3,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: true
+                }
+            ],
+            [
+                {
+                    id: 1,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: false
+                },
+                {
+                    id: 2,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: false
+                },
+                {
+                    id: 3,
+                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    answer: true
+                }
+            ]
         ]
     },
     reducers: {
