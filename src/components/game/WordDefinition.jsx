@@ -1,10 +1,13 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 import { gameImages } from '../../helpers/gameImages'
 import { ArrowComponent } from './ArrowComponent'
 
 
 export const WordDefinition = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="row justify-content-center" >
             <Card className='game-card border-color'>
@@ -20,7 +23,7 @@ export const WordDefinition = () => {
                     <div className="col-12 text-center">
                         <Card.Img className="image-definition"  variant="bottom" src={gameImages(`./book.jpg`)}  />
                     </div>
-                    <ArrowComponent/>
+                    <ArrowComponent actionArrow={() => {navigate('/definitions')}}/>
                 </Card.Body>
             </Card>
         </div>
