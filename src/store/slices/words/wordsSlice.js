@@ -29,7 +29,7 @@ export const wordsSlice = createSlice({
                 },
                 {
                     id: 2,
-                    definition: 'is simply dummy text of the printing and typesetting industry',
+                    definition: 'asdf',
                     answer: false
                 },
                 {
@@ -89,16 +89,18 @@ export const wordsSlice = createSlice({
                     answer: true
                 }
             ]
-        ]
+        ],
+        currentIndex: 0
     },
     reducers: {
-        increment: (state, /* action */ ) => {
-            // TODO: deleted :D
-            state.counter += 1;
+        incrementIndex: (state ) => {
+            if (state.currentIndex < state.words.length - 1) {
+                state.currentIndex += 1;
+            }
         },
     }
 });
 
 
 // Action creators are generated for each case reducer function
-export const { increment } = wordsSlice.actions;
+export const { incrementIndex } = wordsSlice.actions;
