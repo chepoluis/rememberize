@@ -8,8 +8,9 @@ import { ArrowComponent } from "./ArrowComponent";
 export const GameDefinitions = () => {
   const {words: options = [], currentIndex } = useSelector(state => state.words);
   const dispatch = useDispatch();
+  console.log(options )
 
-  const [selectedOption, setselectedOption] = useState(false)
+  const [selectedOption, setselectedOption] = useState(false);
 
   const checkCorrectAnswer = () => {
     if (!selectedOption) {
@@ -22,10 +23,14 @@ export const GameDefinitions = () => {
   }
 
   const incrementIndexByOne = () => {
-    dispatch(incrementIndex())
+    if (selectedOption ) {
+      dispatch(incrementIndex())
+      setselectedOption(false);
+    }
+
   }
 
-  const listOptions = options[currentIndex].map((word) => (
+  const listOptions = options[currentIndex][0].definitions.map((word) => (
     <p
       onClick={ () => checkCorrectAnswer() }
       className={`color-definitions ${ selectedOption || 'pointer' } 
