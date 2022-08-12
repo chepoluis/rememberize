@@ -7,10 +7,7 @@ import { NiceTry } from '../game/NiceTry';
 import { Winner } from '../game/Winner';
 import { WordDefinition } from '../game/WordDefinition';
 import { HomeScreen } from '../home/HomeScreen';
-import { InstructionsScreen } from '../instructions/InstructionsScreen';
 import { NavbarMain } from '../navbar/NavbarMain';
-
-
 
 export const AppRouter = () => {
     return (
@@ -20,9 +17,6 @@ export const AppRouter = () => {
 
             <Routes>
                 <Route path='/' element={ <HomeScreen /> } />
-                <Route path='/login' element={ <LoginScreen /> } />
-                <Route path='/register' element={ <RegisterScreen /> } />
-                <Route path='/instructions' element={ <InstructionsScreen /> } />
                 <Route path='/game' element={ <WordDefinition /> } />
                 <Route path='/definitions' element={ <GameDefinitions /> } />
                 <Route path='/winner' element={ <Winner /> } />

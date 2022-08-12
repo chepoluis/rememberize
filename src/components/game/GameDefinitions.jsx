@@ -4,19 +4,24 @@ import { useNavigate } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { incrementIndex } from '../../store/slices/words/wordsSlice';
+import { incrementPoints } from '../../store/slices/points/pointsSile';
 import { ArrowComponent } from "./ArrowComponent";
 
 export const GameDefinitions = () => {
   const navigate = useNavigate();
-  const {words: options = [], currentIndex } = useSelector(state => state.words);
+  const { words: options = [], currentIndex } = useSelector(state => state.words);
+  const { points } = useSelector(state => state.points);
   const dispatch = useDispatch();
-  console.log(options )
 
   const [selectedOption, setselectedOption] = useState(false);
 
-  const checkCorrectAnswer = () => {
+  const checkCorrectAnswer = (word) => {
     if (!selectedOption) {
       setselectedOption(true);
+
+      // Increment points by one if the answer is correct :)
+      if (word.answer)
+        dispatch(incrementPoints());
     }
   }
 
@@ -35,7 +40,7 @@ export const GameDefinitions = () => {
 
   const listOptions = options[currentIndex][0].definitions.map((word) => (
     <p
-      onClick={ () => checkCorrectAnswer() }
+      onClick={ () => checkCorrectAnswer(word) }
       className={`color-definitions ${ selectedOption || 'pointer' } 
         ${ selectedOption && changeColor(word.answer) || 'base-color-answer' }`}
       key={word.id}
