@@ -29,8 +29,8 @@ export const wordsSlice = createSlice({
             ],
             [
                 {
-                    word: 'Book2',
-                    correctDefinition: 'Set of sheets joined to form a volume that is filled with different data to keep a record.',
+                    word: 'Glass',
+                    correctDefinition: 'A hard, brittle substance, typically transparent or translucent, made by fusing sand with soda, lime, and sometimes other ingredients and cooling rapidly.',
                     definitions: [
                         {
                             id: 1,
@@ -52,8 +52,8 @@ export const wordsSlice = createSlice({
             ],
             [
                 {
-                    word: 'Book3',
-                    correctDefinition: 'Set of sheets joined to form a volume that is filled with different data to keep a record.',
+                    word: 'Uniform',
+                    correctDefinition: 'The distinctive clothing worn by members of the same organization or body or by children attending certain schools.',
                     definitions: [
                         {
                             id: 1,
@@ -75,8 +75,8 @@ export const wordsSlice = createSlice({
             ],
             [
                 {
-                    word: 'Book4',
-                    correctDefinition: 'Set of sheets joined to form a volume that is filled with different data to keep a record.',
+                    word: 'Child',
+                    correctDefinition: 'A young human being below the age of puberty or below the legal age of majority.',
                     definitions: [
                         {
                             id: 1,
@@ -98,23 +98,23 @@ export const wordsSlice = createSlice({
             ],
             [
                 {
-                    word: 'Book',
-                    correctDefinition: 'Set of sheets joined to form a volume that is filled with different data to keep a record.',
+                    word: 'Computer',
+                    correctDefinition: 'An electronic device for storing and processing data, typically in binary form, according to instructions given to it in a variable program.',
                     definitions: [
                         {
                             id: 1,
-                            definition: 'A complex of runways and buildings for the takeoff, landing, and maintenance of civil aircraft, with facilities for passengers.',
-                            answer: false
+                            definition: 'An electronic device for storing and processing data, typically in binary form, according to instructions given to it in a variable program.',
+                            answer: true
                         },
                         {
                             id: 2,
-                            definition: 'The land alongside or sloping down to a river or lake.',
+                            definition: 'An object, typically a piece of soft rubber or plastic, used to rub out something written.',
                             answer: false
                         },
                         {
                             id: 3,
-                            definition: 'Set of sheets joined to form a volume that is filled with different data to keep a record.',
-                            answer: true
+                            definition: 'A colorless, transparent, odorless liquid that forms the seas, lakes, rivers, and rain and is the basis of the fluids of living organisms.',
+                            answer: false
                         }
                     ]
                 }
