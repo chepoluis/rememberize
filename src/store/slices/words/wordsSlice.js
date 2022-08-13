@@ -8,6 +8,7 @@ export const wordsSlice = createSlice({
                 {
                     word: 'Book',
                     correctDefinition: 'Set of sheets joined to form a volume that is filled with different data to keep a record.',
+                    imgUrl: 'book.png',
                     definitions: [
                         {
                             id: 1,
@@ -31,6 +32,7 @@ export const wordsSlice = createSlice({
                 {
                     word: 'Glass',
                     correctDefinition: 'A hard, brittle substance, typically transparent or translucent, made by fusing sand with soda, lime, and sometimes other ingredients and cooling rapidly.',
+                    imgUrl: 'glass.png',
                     definitions: [
                         {
                             id: 1,
@@ -54,6 +56,7 @@ export const wordsSlice = createSlice({
                 {
                     word: 'Uniform',
                     correctDefinition: 'The distinctive clothing worn by members of the same organization or body or by children attending certain schools.',
+                    imgUrl: 'uniform.png',
                     definitions: [
                         {
                             id: 1,
@@ -77,6 +80,7 @@ export const wordsSlice = createSlice({
                 {
                     word: 'Child',
                     correctDefinition: 'A young human being below the age of puberty or below the legal age of majority.',
+                    imgUrl: 'child.png',
                     definitions: [
                         {
                             id: 1,
@@ -100,6 +104,7 @@ export const wordsSlice = createSlice({
                 {
                     word: 'Computer',
                     correctDefinition: 'An electronic device for storing and processing data, typically in binary form, according to instructions given to it in a variable program.',
+                    imgUrl: 'computer.png',
                     definitions: [
                         {
                             id: 1,

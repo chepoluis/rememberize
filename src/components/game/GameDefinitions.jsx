@@ -13,16 +13,18 @@ export const GameDefinitions = () => {
   const { points } = useSelector(state => state.points);
   const dispatch = useDispatch();
 
-  const [selectedOption, setselectedOption] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(false);
+           
 
   const checkCorrectAnswer = (word) => {
     if (!selectedOption) {
-      setselectedOption(true);
+      setSelectedOption(true);
 
       // Increment points by one if the answer is correct :)
       if (word.answer)
         dispatch(incrementPoints());
     }
+   
   }
 
   const changeColor = (answer) => {
@@ -30,12 +32,19 @@ export const GameDefinitions = () => {
   }
 
   const incrementIndexByOne = () => {
-    if (selectedOption ) {
+    if (selectedOption) {
       dispatch(incrementIndex());
-      setselectedOption(false);
+      setSelectedOption(false);
       navigate('/game');
-    }
 
+      if(points === options.length){
+        navigate('/winner');
+      }
+  
+      if( currentIndex === options.length - 1 && points < options.length ){
+        navigate('/nicetry');
+      }
+    }
   }
 
   const listOptions = options[currentIndex][0].definitions.map((word) => (

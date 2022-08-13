@@ -12,10 +12,10 @@ export const WordDefinition = () => {
   const { words: options = [], currentIndex } = useSelector(
     (state) => state.words
   );
-  const dispatch = useDispatch();
+  
+  const image = options[currentIndex][0].imgUrl;
 
   const incrementIndexByOne = () => {
-    
     navigate('/definitions');
   };
 
@@ -42,7 +42,7 @@ export const WordDefinition = () => {
             <Card.Img
               className="image-definition"
               variant="bottom"
-              src={gameImages(`./book.jpg`)}
+              src={gameImages(`./${image}`)}
             />
           </div>
           <ArrowComponent actionArrow={incrementIndexByOne} />
