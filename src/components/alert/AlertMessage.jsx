@@ -4,7 +4,7 @@ import Alert from 'react-bootstrap/Alert';
 export const AlertMessage = ({ text }) => {
 
   return (
-    <Alert key='asd' variant='danger'>
+    <Alert key={text} variant='danger'>
       { text }
     </Alert>
   )

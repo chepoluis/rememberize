@@ -37,7 +37,7 @@ export const GameDefinitions = () => {
       dispatch(incrementIndex());
       setSelectedOption(false);
       navigate('/game');
-
+      
       if(points === options.length){
         navigate('/winner');
       }

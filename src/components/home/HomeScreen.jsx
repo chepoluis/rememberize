@@ -1,7 +1,5 @@
-import { Button, Card, Col, Container, Image, Row } from "react-bootstrap"
+import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
 
-// picsum: get random images
-// mdb-cli: maybe use to deploy the web app?
 export const HomeScreen = () => {
     return (
         <div>
