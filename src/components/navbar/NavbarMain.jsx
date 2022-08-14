@@ -1,7 +1,6 @@
 import React from "react";
-import { Container, Nav, NavDropdown } from "react-bootstrap";
+import { Container, Nav } from "react-bootstrap";
 import { Navbar } from 'react-bootstrap';
-import { userImage } from "../../helpers/userImages";
 
 export const NavbarMain = () => {
     return (
