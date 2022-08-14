@@ -73,9 +73,9 @@ export const HomeScreen = () => {
                 </Container>
             </main>
 
-            <footer className='py-5 mt-5 bg-dark'>
+            <footer className='py-5 mt-5 color-navbar'>
                 <Container className="px-4">
-                    <p className='text-center text-white'>
+                    <p className='text-center text-black'>
                         Copyright &copy; Rememberize 2022
                     </p>
                 </Container>
