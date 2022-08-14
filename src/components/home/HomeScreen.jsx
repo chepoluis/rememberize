@@ -16,7 +16,7 @@ export const HomeScreen = () => {
                             />
                         </Col>
                         <Col sm={5}>
-                            <h1 className="font-weight-light">TagLine</h1>
+                            <h1 className="font-weight-light">Rememberize</h1>
 
                             <p className='mt-4'>
                                 Memorizing English words may seem like a difficult challenge for English language learners. However, it doesn't necessarily have to be.
