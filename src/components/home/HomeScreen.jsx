@@ -8,7 +8,8 @@ export const HomeScreen = () => {
                 <Container>
                     <Row className="px-4 my-5">
                         <Col sm={7}>
-                            <Image 
+                            <Image
+                                style={{ width: '350px' }}
                                 src={gameImages('./words2.png')}
                                 fluid
                                 rounded
