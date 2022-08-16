@@ -128,14 +128,17 @@ export const wordsSlice = createSlice({
         currentIndex: 0
     },
     reducers: {
-        incrementIndex: (state ) => {
+        incrementIndex: (state) => {
             if (state.currentIndex < state.words.length - 1) {
                 state.currentIndex += 1;
             }
         },
+        resetIndex: (state) => {
+            state.currentIndex = 0
+        }
     }
 });
 
 
 // Action creators are generated for each case reducer function
-export const { incrementIndex } = wordsSlice.actions;
+export const { incrementIndex, resetIndex } = wordsSlice.actions;
