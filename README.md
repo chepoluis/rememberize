@@ -1,4 +1,4 @@
 # Fun app to learn vocabulary :D
 
 
-[Link from vercel](https://rememberize.vercel.app/ )
+[Link to the App](https://rememberize.vercel.app/ )
